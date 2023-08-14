@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-ozuc
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-pxed-tenant/mc-quality-dashboard/backend-quality-dashboard-ozuc@sha256:30d6d5eacff20caf7cfa5c53009e3e2dd946a3b261f863e129286e2d57eaf0ae
+        name: container-image
+        resources: {}
+status: {}
