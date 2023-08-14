@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: frontend-quality-dashboard-hkol
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-pxed-tenant/mc-quality-dashboard/frontend-quality-dashboard-hkol@sha256:84b5d23ef5a57337b0f7594a49c82e08f313e157be309d64b5ab036d214703aa
+        name: container-image
+        resources: {}
+status: {}
